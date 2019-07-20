@@ -1,6 +1,8 @@
 /*
 Hsueh Chih Liu
 116131186
+07/19/2019
+MS2
 */
 
 #ifndef SICT_ITEMSET_H

@@ -1,8 +1,9 @@
 /*
 Hsueh Chih Liu
 116131186
+07/19/2019
+MS2
 */
-
 #include "ItemSet.h"
 #include <string>
 #include <iostream>
@@ -42,7 +43,7 @@ namespace sict {
 		if (!full)
 		{
 			//If the Boolean is false the data consists of the name of the items in the set and the next serial number to be assigned.
-			os << this->name << " " << this->serialNumber << endl;
+			os << "[" << this->name << "][" << this->serialNumber << "]";
 
 		}
 		else {

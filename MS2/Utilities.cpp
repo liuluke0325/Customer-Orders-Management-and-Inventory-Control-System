@@ -1,6 +1,8 @@
 /*
 Hsueh Chih Liu
 116131186
+07/19/2019
+MS2
 */
 
 #include "Utilities.h"
@@ -20,7 +22,7 @@ namespace sict {
 		else if (nextDelimiterPos == string::npos) {
 			tempToken = str.substr(next_pos);
 			//If not, this function returns the position that is beyond the end of the string
-			nextDelimiterPos = str.size() - 1;
+			nextDelimiterPos = str.size();
 		}
 		else {
 			// find next delimiter and token
@@ -29,9 +31,10 @@ namespace sict {
 			//check width without description
 			//compares the size of the extracted token to the field width currently stored in the objectand 
 			//if the size of the token is greater than that width increases that width.
-			if (tempToken.size() > this->width)
+			if ((tempToken.size() > this->width) && next_pos == 0) // only change for the name
 			{
 				this->width = tempToken.size();
+
 			}
 		}
 
